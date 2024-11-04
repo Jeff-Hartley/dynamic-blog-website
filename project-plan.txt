@@ -1,0 +1,10 @@
+project-plan
+
+- create git repository
+- make multiple commits to demonstrate git knowledge
+- create index.html - acts as a homepage
+- create new-post.html - for post creation
+- create post.html - viewing and editing posts
+- Use JavsScript to handle CRUD operations
+- create style.css to style the website as needed with CSS
+- submit final project repository and website to blackboard
