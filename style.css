@@ -1,0 +1,42 @@
+:root {
+    --background-color : rgb(207, 204, 178);
+    --main-color : rgb(52, 27, 112);
+    --highlight-color : rgb(63, 85, 206);
+    --small-font : 12px;
+    --head-font : 30px;
+}
+
+body {
+    background-color: var(--background-color);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color: var(--main-color);
+    text-align: center;
+    font-size: var(--head-font);
+}
+
+p {
+    text-align: center;
+}
+
+h5 {
+    color: var(--main-color);
+    font-size: var(--small-font);
+    text-align: center;
+}
+
+footer {
+    position: fixed;
+            padding: 5px;
+            bottom: 0;
+            width: 100%;
+            height: 50px;
+        
+}
+
+hr {
+    color: var(--highlight-color);
+    width: 10%
+}
