@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeff Hartley's Dynamic Blog - Posts</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Blog Post</h1> 
+        <nav>
+            <ul>
+                <li><a href="index.html">Home page</a><br></li>
+                <li><a href="new-post.html">Create New Post</a></li>
+                
+            </ul>
+        </nav>
+        </header><br>
+
+    <p>This is where the blog posts will go. Enjoy the reading!</p><br>
+
+    <p id="displayPostTitle"></p>
+    <p id="displayPostContent"></p><br>
+
+    <button type="reset" id="clearBtn">Clear Post</button><br>
+    <button type="button" id="editBtn">Edit Post</button><br>
+
+    <div id="editPostDiv">
+        <label for="editPostTitle">Edit Post Title</label><br>
+        <input type="text" id="editPostTitle" required><br><br>
+        <label for="editPostContent">Edit Contents of the Post</label><br>
+        <textarea id="editPostContent" required></textarea><br><br>
+        
+        <button id="submitBtn">Submit Edit</button><br><br>
+    </div>
+    
+    
+    <footer>
+        <h5>&copy; 2024 Jeff Hartley</h5>
+    </footer>
+</body>
+</html>
