@@ -1,25 +1,97 @@
 :root {
-    --background-color : rgb(207, 204, 178);
-    --main-color : rgb(52, 27, 112);
-    --highlight-color : rgb(63, 85, 206);
-    --small-font : 12px;
-    --head-font : 30px;
+    --bg-color : rgb(207, 207, 178);
+    --main-color : rgb(224, 86, 32);
+    --highlight-main : rgb(238, 107, 55);
+    --highlight-color : rgb(255, 171, 137);
+    --small-font : 10px;
+    --head-font : 40px;
 }
 
 body {
-    background-color: var(--background-color);
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
 }
 
 h1 {
     color: var(--main-color);
     text-align: center;
     font-size: var(--head-font);
+    text-shadow: -1px 0 var(--highlight-color), 0 1px var(--highlight-color), 1px 0 var(--highlight-color), 0 -1px var(--highlight-color);
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: rgb(245, 245, 245);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: rgb(206, 204, 204);
+    text-decoration: underline;
+    text-decoration-style: dashed;
+    
 }
 
 p {
     text-align: center;
 }
+
+#newPostDiv, #editPostDiv {
+    display: block;
+    text-align: center;
+    margin: auto;
+}
+
+button {
+    border: none;
+    border-radius: 3px;
+    background-color: rgb(20, 20, 20);
+    color: var(--main-color);
+    padding: 8px;
+    display: block;
+    margin: auto;
+}
+
+button:hover {
+    background-color: black;
+}
+
+label {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+input {
+    border: none;
+    border-radius: 7px;
+    padding: 10px;
+}
+
+textarea {
+    height: 200px;
+    width: 500px;
+}
+
+
 
 h5 {
     color: var(--main-color);
@@ -29,14 +101,71 @@ h5 {
 
 footer {
     position: fixed;
-            padding: 5px;
+            padding: 1px;
             bottom: 0;
             width: 100%;
             height: 50px;
         
 }
 
-hr {
-    color: var(--highlight-color);
-    width: 10%
+/* media querie for smart phones */
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 2px;
+    }
+
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    #newPostDiv, #editPostDiv {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    input, textarea {
+        width: 50%;
+        margin: 5px auto;
+    }
 }
+
+/* media querie for tablets */
+@media (min-width: 601px) and (max-width: 1024)  {
+    header {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 4px;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    #newPostDiv, #editPostDiv {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    input, textarea {
+        width: 60%;
+        margin: 5px auto;
+    }
+}
+
+/* media querie for cpu */
+@media (min-width: 1025px) {
+
+}
+
